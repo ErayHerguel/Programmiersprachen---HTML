@@ -6,7 +6,7 @@ body
 
 body 
 {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,3 +41,14 @@ body
     text-shadow: #cfcfcf;
 }
 
+.main-page
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-page > p
+{
+    font-size: 30;
+    font-weight: 800;
+}
