@@ -76,3 +76,13 @@ body
     cursor: crosshair;
     transform: scale(1.5);
 }
+
+footer 
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ccffcc;
+    color: #000000;
+}
