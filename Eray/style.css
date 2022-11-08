@@ -52,3 +52,27 @@ body
     font-size: 30;
     font-weight: 800;
 }
+
+.travel-cards 
+{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.travel-cards__card 
+{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ccffcc;
+    color: #000000;
+}
+
+.travel-cards__card:hover
+{
+    cursor: crosshair;
+    transform: scale(1.5);
+}
