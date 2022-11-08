@@ -10,7 +10,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("");
+    background-image: url("./images/background_image.jpeg");
     background-size: auto;
     font-family: "Rubik", sans-serif;
     color: rgb(255, 255, 255);
