@@ -13,6 +13,7 @@ body
     background-image: url("./images/background_image.jpeg");
     background-size: auto;
     font-family: "Rubik", sans-serif;
+    /* better use only 1 color format, just hex OR rgb in your case :) */
     color: rgb(255, 255, 255);
 }
 
@@ -22,6 +23,10 @@ body
     padding: 16px 20px;
     justify-content: space-between;
     align-items: center;
+    /* you can also add here `flex-wrap: wrap` so that when you resize the screen, there will be no horizontal scroll.
+    That's the fastest solution, but the best one would be to add some media queries, they help to adjust layouts depending on screen size.
+    Check it here https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+    */
 }
 
 #add-btn 
@@ -49,6 +54,7 @@ body
 
 .main-page > p
 {
+    /* you probably meant here 30px */
     font-size: 30;
     font-weight: 800;
 }
@@ -69,11 +75,13 @@ body
     align-items: center;
     background: #ccffcc;
     color: #000000;
+    /* please also add something like `transition: 0.1s`, so that the hover effect is a bit smoother */
 }
 
 .travel-cards__card:hover
 {
     cursor: crosshair;
+    /* i think 1.5 looks a bit too much, maybe 1.1 will already enough */
     transform: scale(1.5);
 }
 
@@ -87,6 +95,7 @@ footer
     color: #000000;
 }
 
+/* a misprint here, it's footer-navigation with I */
 .footer-navogation 
 {
     display: flex;
@@ -96,6 +105,7 @@ footer
 
 li:hover 
 {
+    /* would also go with 1.1 here and some transition property for smoothness */
     transform: scale(1.2);
     text-shadow: 1px 1px #cfcfcf;
 }
