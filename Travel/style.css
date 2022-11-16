@@ -6,14 +6,15 @@ body
 
 body 
 {
-    margin: 0 auto;
+    color: whitesmoke;
+    margin: 5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-image: url("./images/background_image.jpeg");
     background-size: auto;
     font-family: "Rubik", sans-serif;
-    color: rgb(255, 255, 255);
+    /* better use only 1 color format, just hex OR rgb in your case :) */
 }
 
 .header-menu 
@@ -22,6 +23,11 @@ body
     padding: 16px 20px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    /* you can also add here `flex-wrap: wrap` so that when you resize the screen, there will be no horizontal scroll.
+    That's the fastest solution, but the best one would be to add some media queries, they help to adjust layouts depending on screen size.
+    Check it here https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+    */
 }
 
 #add-btn 
@@ -49,7 +55,8 @@ body
 
 .main-page > p
 {
-    font-size: 30;
+    /* you probably meant here 30px */
+    font-size: 30px;
     font-weight: 800;
 }
 
@@ -69,12 +76,15 @@ body
     align-items: center;
     background: #ccffcc;
     color: #000000;
+    transition: 0.3s
+    /* please also add something like `transition: 0.1s`, so that the hover effect is a bit smoother */
 }
 
 .travel-cards__card:hover
 {
     cursor: crosshair;
-    transform: scale(1.5);
+    /* i think 1.5 looks a bit too much, maybe 1.1 will already enough */
+    transform: scale(1.1);
 }
 
 footer 
@@ -87,7 +97,8 @@ footer
     color: #000000;
 }
 
-.footer-navogation 
+/* a misprint here, it's footer-navigation with I */
+.footer-navigation 
 {
     display: flex;
     gap: 20px;
@@ -96,7 +107,8 @@ footer
 
 li:hover 
 {
-    transform: scale(1.2);
+    /* would also go with 1.1 here and some transition property for smoothness */
+    transform: scale(1.1);
     text-shadow: 1px 1px #cfcfcf;
 }
 

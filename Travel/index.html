@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- please name the file `index.html`, it's a default name for entry point file -->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9,6 +10,7 @@
     </head>
     <body>  
         <header class="header-menu">
+            <!-- please provide width inside .css file for a class/ id selector. Same goes for images in travel-cards__card-->
             <img src="images/title_image.png" width="400" alt="Remember your travel">
             <button id="add-btn"><h2>NEW DESTINATION</h2></button>
         </header>
@@ -17,9 +19,9 @@
             <section class="main-page">
                 <p>I was traveling my whole life and i always loved it. I visited a lot of places on this earth an I wanted to share them!</p>
                 <h3>These are the places i have visited: </h3>
-                <br>
-                <br>
+                <!-- these <br> tags I mostly used just to show that they exist. Please use some CSS margin or padding to create space between containers -->
                 <div class="travel-cards">
+                    <!-- perfect names for css classes! I know I didn't give the info regarding the BEM convention, but am very happy to see it used here :) -->
                     <div class="travel-cards__card">
                         <img class="card__image" src="./images/london_image.jpeg" width="300" alt="London">
                         <h3>London - United Kingdom</h3>
@@ -73,12 +75,14 @@
             <nav>
                 <ul class="footer-navigation">
                     <li>
-                        <a target="_blank" href="./1.html">
+                        <!-- please change href here for, e.g., your github -->
+                        <a target="_blank" href="https://github.com/ErayHerguel">
                             Learn more about me
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="./1.html">
+                         <!-- and here you can provide the email or something else -->
+                        <a target="_blank" href="./contact.html">
                             Contact
                         </a>
                     </li>
