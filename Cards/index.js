@@ -3,6 +3,7 @@
 const cardsContainer = document.getElementById('cards-container')
 const addButton = document.getElementById('add-btn')
 const removeButton = document.getElementById('remove-btn')
+const toggleButton = document.getElementById('toggle-btn')
 // e.g. for class
 // document.querySelector('.some-className')
 
@@ -39,9 +40,19 @@ const removeCards = () =>
     }
 }
 
+const changeCards = () =>
+{
+    const cards = document.querySelectorAll('.card')
+    for (let i = 0; i < cards.length; i++) 
+    {
+        cards[i].classList.toggle('card--dark')
+    }
+}
+
 // createCards();
 
 // addEventListener - attaches an event listener to an element
 // element.addEventListener(event, function)
 addButton.addEventListener('click', createCards)
 removeButton.addEventListener('click', removeCards)
+toggleButton.addEventListener('click', changeCards)
