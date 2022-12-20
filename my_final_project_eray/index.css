@@ -1,15 +1,24 @@
+body
+{
+    background-color: darkorchid;
+}
+
 #puzzle-container
 {
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     border: 1px solid;
     position: relative;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .puzzle-item
 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 1px solid;
     position: absolute;
     display: flex;

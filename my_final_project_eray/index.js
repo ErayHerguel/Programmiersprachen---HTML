@@ -22,6 +22,7 @@ function getCol(pos)
     return col;
 }
 
+/* generates Tiles */
 function generatePuzzle()
 {
     for(let i = 1; i <= size * size; i++)
@@ -30,8 +31,8 @@ function generatePuzzle()
         ({
             value: i,
             position: i,
-            x: (getCol(i) - 1) * 200,
-            y: (getRow(i) - 1) * 200,
+            x: (getCol(i) - 1) * 150,
+            y: (getRow(i) - 1) * 150,
             disabled: false,
         })
     }
@@ -78,3 +79,14 @@ function getRandomValues()
     const randomValues = values.sort(() => Math.random() - 0.5);
     return randomValues;
 }
+
+function handleInput()
+{
+    document.addEventListener('click', handleClick);
+}
+
+function getEmptyTile()
+{
+    return puzzle.find(item => item.disabled);
+}
+
