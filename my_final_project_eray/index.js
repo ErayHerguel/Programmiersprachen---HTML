@@ -90,3 +90,6 @@ function getEmptyTile()
     return puzzle.find(item => item.disabled);
 }
 
+const falseValue = values.find(value => value === true);
+
+console.log(falseValue); // false
